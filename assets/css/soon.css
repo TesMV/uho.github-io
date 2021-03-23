@@ -1,0 +1,43 @@
+.soon{
+    padding: 150px;
+}
+
+.soon h1{
+    opacity: 0;
+    text-align: center;
+    margin-top: 25px;
+
+    animation-name: stretch;
+    animation-duration: 0.5s; 
+    animation-timing-function: ease-out; 
+
+    animation-direction: alternate;
+    animation-fill-mode:both;
+    animation-play-state:running;
+}
+
+.soon span{
+    opacity: 0;
+
+    animation-name: stretch;
+    animation-duration: 0.5s; 
+    animation-timing-function: ease-out; 
+
+    animation-direction: alternate;
+    animation-fill-mode:both;
+    animation-play-state:running;
+}
+
+@keyframes stretch {
+    0% {
+      transform: scale(.0);
+      border-radius: 100%;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }

@@ -1,0 +1,63 @@
+.side-navbar {
+    width: 180px;
+    height: 100%;
+    position: absolute;
+    transition: 0.5s;
+    opacity: 0;
+
+    animation-name: stretch;
+    animation-duration: 0.5s; 
+    animation-timing-function: ease-out; 
+
+    animation-direction: alternate;
+    animation-fill-mode:both;
+    animation-play-state:running;
+  }
+  
+  @keyframes stretch {
+    0% {
+      transform: scale(.0);
+      border-radius: 100%;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .side-navbar ul{
+      list-style: none;
+  }
+
+  .side-navbar h3{
+      text-align: end;
+      margin-top: 15px;
+  }
+
+  .nav-link:active,
+  .nav-link:focus,
+  .nav-link:hover {
+    background-color: #ffffff26;
+  }
+  
+  .my-container {
+    transition: 0.4s;
+  }
+  
+  .active-nav {
+    margin-left: 0;
+  }
+  
+  /* for main section */
+  .active-cont {
+    margin-left: 180px;
+  }
+  
+  #menu-btn {
+    background-color: #100901;
+    color: #fff;
+    margin-left: -62px;
+  }
